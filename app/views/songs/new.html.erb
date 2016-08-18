@@ -1,0 +1,6 @@
+<%= form_tag new_song_path, method: "POST" do %>
+<%= text_field_tag :name %>
+<%= text_field_tag @song.artist_id %>
+<%= text_field_tag @song.genre_id %>
+<%= submit_tag  %>
+<% end %>

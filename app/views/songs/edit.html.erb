@@ -1,0 +1,8 @@
+<%= form_tag song_path(@song), method: PATCH do %>
+<%= text_field_tag :name %>
+<%= number_field @song.artist_id %>
+<%= number_field @song.genre_id %>
+<%= submit_tag  %>
+<% end %>
+
+<%= inspect params %>
